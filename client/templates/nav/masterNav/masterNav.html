@@ -1,0 +1,21 @@
+<template name='masterNav'>
+	{{ #if isInRole 'masterAdmin' }}
+		<li class="dropdown">
+		  <a class="nav-link nav-text dropdown-link restricted-nav-collapse"
+					role="button"
+					data-toggle="collapse"
+					href="#masterCollapse"
+					aria-expanded="false">
+			Master <span class="caret"></span>
+		  </a>
+		  <ul class="collapse" id="masterCollapse" role="menu">
+		    <li>
+					<a class='closes-nav nav-link nav-text dropdown-link'
+							 href="/ManageUsers">
+							 Manage Users
+					</a>
+				</li>
+		  </ul>
+		</li>
+	{{/if}}
+</template>

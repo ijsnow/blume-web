@@ -1,0 +1,25 @@
+<template name="units">
+  <div class="units-wrapper">
+  	<div class="row">
+  		<div class="col-md-10 col-md-offset-1 wrapper-col">
+  		  <!-- Unit tabs -->
+  		  <ul id="unit-tabs" class="nav nav-tabs" role="tablist">
+  		  	{{ #each unitList }}
+  		    	<li class='tab' role="presentation">
+  		    		<a class='tab tab-btn' href="#{{ unitName }}" data-id="{{ unitName }}" aria-controls="{{ unitName }}" role="tab" data-toggle="tab">
+  			    	  {{ name }}
+  			    	</a>
+  			    </li>
+  		    {{ /each }}
+  		  </ul>
+
+  			<!-- Tab panes -->
+  		  <div class="tab-content">
+  		  	{{ #each unitList }}
+  		    	{{ > unitTab }}
+  		    {{ /each }}
+  		  </div>
+  		</div>
+  	</div>
+  </div>
+</template>

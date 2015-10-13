@@ -1,0 +1,41 @@
+<template name="signInForm">
+<!-- #BEGIN - Sign in Content -->
+  <div class="container" id="signInContent">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>Sign In</h1>
+        <form class='js-sign-in-form' data-ex-title='sign-in'>
+           <div class='row'>
+             <div class='col-sm-12'>
+               <div id='loginError' class="alert alert-danger" role="alert" style='display: none;'></div>
+             </div>
+           </div>
+           <div class='row'>
+             <div class='col-sm-12'>
+               <div class="form-group">
+                 <label for="signInEmailInput">Email</label>
+                 <input type="email" class="form-control accounts-input" id="signInEmailInput" placeholder="Enter email">
+               </div>
+             </div>
+           </div>
+           <div class='row'>
+             <div class='col-sm-12'>
+               <div class="form-group">
+                 <label for="signInPasswordInput">Password</label>
+                 <input type="password" class="form-control accounts-input" id="signInPasswordInput" placeholder="Enter password">
+               </div>
+               <a class='js-create-new-button' href=''>Create New Account</a>
+             </div>
+           </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button type='submit' class="btn btn-primary olive pull-right js-sign-in">Sign In</button>
+              <button type="button" class="btn btn-default pull-right js-cancel " href="#">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- #END - Sign in Content -->
+</template>

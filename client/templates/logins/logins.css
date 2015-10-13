@@ -1,0 +1,36 @@
+
+
+/*.home-collapse {
+  background: #E5D9D2;
+  column-count: 2;
+  column-gap: 40px;
+  z-index: 100;
+}*/
+
+.js-cancel {
+  margin-right: 5px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.form-padder {
+  padding-left: 50px;
+  padding-right: 50px;
+}*/
+
+.sticky-login {
+  position: absolute;
+  top: 50px;
+}
+
+.btn.olive {
+  border-color: #637140;
+}
+
+.btn.olive:hover, .btn.olive:active, .btn.olive:focus {
+  background-color: #424E22;
+  border-color: #4A5727;
+}

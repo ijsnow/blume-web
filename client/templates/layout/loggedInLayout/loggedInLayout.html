@@ -1,0 +1,15 @@
+<template name="loggedInLayout">
+  {{ #if isInRole 'admin' }}
+  	<header class='site-header'>
+  		{{ > fixedNav }}
+      <!-- {{ > accountsForms }} -->
+    </header>
+    {{ > blazeContent }}
+    <div class="container">
+      {{ > yield }}
+    </div>
+  {{ else }}
+  	{{ > home }}
+  {{ /if }}
+  {{>footer}}
+</template>

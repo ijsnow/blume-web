@@ -1,0 +1,18 @@
+#footer {
+  padding: 20px;
+  background-color: #52612B;
+  color: #E5D9D2;
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 990px) {
+  .js-newsEmailForm {
+    margin-top: 10px;
+  }
+}

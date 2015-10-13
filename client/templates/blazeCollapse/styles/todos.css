@@ -1,0 +1,61 @@
+.ex-todos {
+    height: auto;
+
+    -webkit-animation-name: todos; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: todos;
+    animation-duration: 1s;
+}
+
+.ex-c-todos {
+    height: 0px;
+
+    -webkit-animation-name: c-todos; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    animation-name: c-todos;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes todos {
+    from {
+        height: 0px;
+        padding: 0px;
+    }
+    to {
+        height: 336px;
+        padding: 15px 0px 30px opx;
+    }
+}
+
+@keyframes todos {
+    from {
+        height: 0px;
+        padding: 0px;
+    }
+    to {
+        height: 336px;
+        padding: 15px 0px 30px opx;
+    }
+}
+
+@-webkit-keyframes c-todos {
+    from {
+        height: 336px;
+        padding: 15px 0px 30px opx;
+    }
+    to {
+        height: 0px;
+        padding: 0px;
+    }
+}
+
+@keyframes c-todos {
+    from {
+        height: 336px;
+        padding: 15px 0px 30px opx;
+    }
+    to {
+        height: 0px;
+        padding: 0px;
+    }
+}

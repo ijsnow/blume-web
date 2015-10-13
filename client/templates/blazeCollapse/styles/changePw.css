@@ -1,0 +1,61 @@
+.ex-change-pw {
+    height: auto;
+
+    -webkit-animation-name: change-pw; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: change-pw;
+    animation-duration: 1s;
+}
+
+.ex-c-change-pw {
+    height: 0px;
+
+    -webkit-animation-name: c-change-pw; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    animation-name: c-change-pw;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes change-pw {
+    from {
+        height: 0px;
+        padding: 0px;
+    }
+    to {
+        height: 371px;
+        padding: 15px 0px 30px opx;
+    }
+}
+
+@keyframes change-pw {
+    from {
+        height: 0px;
+        padding: 0px;
+    }
+    to {
+        height: 371px;
+        padding: 15px 0px 30px opx;
+    }
+}
+
+@-webkit-keyframes c-change-pw {
+    from {
+        height: 371px;
+        padding: 15px 0px 30px opx;
+    }
+    to {
+        height: 0px;
+        padding: 0px;
+    }
+}
+
+@keyframes c-change-pw {
+    from {
+        height: 371px;
+        padding: 15px 0px 30px opx;
+    }
+    to {
+        height: 0px;
+        padding: 0px;
+    }
+}

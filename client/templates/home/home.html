@@ -1,0 +1,114 @@
+<template name="home">
+	<header class='home-header'>
+		<div id="mountainsAndSky" class="img"></div>
+		<div id="mountains" class='mountains img'></div>
+		<img id='logo' src="/images/logo.png" width='{{ logoDims }}' height='{{ logoDims }}' style='top: {{ logoTop }}px;' alt=''>
+	</header>
+
+  {{ > homeNav }}
+	<div id='main' class="container">
+		<div class='content' id='WhatIsBlume'><!-- first-content'>-->
+			<div class='row'>
+				{{ #with whatIsBlume }}
+
+					<div class='col-md-4 pull-right'>
+						<img src='/images/closedmodel.png' alt=''>
+					</div>
+					<div class='col-md-8'>
+						<h1 class='center title'>{{ title }}</h1>
+						{{ > whatIsBlumeBullets }}
+						<h1 class='center title'>Our Mission</h1>
+            <!-- <div class="more-info ex-whatIsBlume"> -->
+            {{ content }}
+            <!-- </div> -->
+					</div>
+				{{ /with }}
+			</div>
+		</div>
+
+		<div class='content' id='BlumeForYou'>
+			<div class='row'>
+				{{ #with blumeForYou }}
+					<h1 class='center title'>{{ title }}</h1>
+				{{ /with }}
+				<div class='col-md-4 pull-right'>
+					<img src='/images/fullmodel.png' alt=''>
+				</div>
+				<div class='col-md-8'>
+					<div class="row">
+						<div class='col-md-12'>
+							{{ #with gardener }}
+								<h1 class='center title'>{{ title }}</h1>
+								{{ > gardenerBullets }}
+                <div class="more-info ex-gardener">
+                  <p class='home'>{{ content }}</p>
+                </div>
+							{{ /with }}
+						</div>
+						<div class='col-md-12'>
+							{{#with newbie }}
+								<h1 class='center title'>{{ title }}</h1>
+								{{ > newbieBullets }}
+                <div class="more-info ex-newbie">
+                  <p class='home'>{{ content }}</p>
+                </div>
+							{{/with}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='content' id='Scale'>
+			<div class='row'>
+				{{ #with scale }}
+
+					<div class='col-md-4 pull-right'>
+						<img src='/images/row.png' alt=''>
+					</div>
+					<div class='col-md-8'>
+						<h1 class='center title'>{{ title }}</h1>
+            {{ > scaleBullets }}
+					  <div class="more-info ex-scale">
+              <p class='home'>{{ content }}</p>
+            </div>
+					</div>
+				{{ /with }}
+			</div>
+		</div>
+
+		<div class='content' id='WhatsInside'>
+			<div class='row'>
+				{{ #with whatsInside }}
+					<div class='col-md-4 pull-right'>
+						<img src='/images/section.png' alt=''>
+					</div>
+					<div class='col-md-8'>
+						<h1 class='center title'>{{ title }}</h1>
+            {{ > whatsInsideBullets }}
+            <div class="more-info ex-whatsInside">
+					    <p class='home'>{{ content }}</p>
+            </div>
+					</div>
+				{{ /with }}
+			</div>
+		</div>
+
+		<div class='last-content' id='Control'>
+			<div class='row'>
+				{{ #with controlIt }}
+					<h1 class='center title'>{{ title }}</h1>
+					{{ > controlItBullets }}
+          <div class="more-info ex-controlIt">
+            <p class='home'>{{ content }}</p>
+          </div>
+				{{ /with }}
+				<div class='col-12'>
+					<div class="devices">
+          	{{ > devicesSvg }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

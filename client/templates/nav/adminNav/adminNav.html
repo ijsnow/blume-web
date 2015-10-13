@@ -1,0 +1,17 @@
+<template name='adminNav'>
+	{{ #if isInRole 'admin' }}
+		<li>
+			<a class="nav-link nav-text dropdown-link restricted-nav-collapse"
+					role="button"
+					data-toggle="collapse"
+					href="#adminCollapse"
+					aria-expanded="false">
+			  Admin <span class="caret"></span>
+			</a>
+		  <ul class="collapse" id="adminCollapse" role="menu">
+			  <li><a class='closes-nav nav-link nav-text dropdown-link' href="/Packets">Packets</a></li>
+				<li><a class='closes-nav nav-link nav-text dropdown-link' href="/Emails">Emails</a></li>
+		  </ul>
+		</li>
+	{{/if}}
+</template>

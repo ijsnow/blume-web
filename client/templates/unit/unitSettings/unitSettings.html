@@ -1,0 +1,59 @@
+<template name='unitSettings'>
+  <div class='settings-wrapper'>
+  	<form id="unitSettingsForm">
+      <div class='row'>
+  			<div class='col-sm-6'>
+  			  <div class="form-group">
+  			    <label for="plantTypeInput">What are you growing?</label>
+            <input id="plantTypeInput" name="plantTypeInput" class="form-control typeahead" type="text"
+                   placeholder="Ex: tomatoes"
+                   autocomplete="off" spellcheck="off"
+                   data-source="plantTypes"
+                   data-hint='false'/>
+  			  </div>
+  			</div>
+  		</div>
+      <div class='row'>
+  			<div class='col-sm-6'>
+  			  <div class="form-group">
+  			    <label for="maxTempInput">Max Temperature</label>
+  			    <input id="maxTempInput" type="number" class="form-control">
+  			  </div>
+  			</div>
+  			<div class='col-sm-6'>
+  				<div class="form-group">
+  			    <label for="minTempInput">Min Temperature</label>
+  			    <input id="minTempInput" type="number" class="form-control">
+  			  </div>
+  			</div>
+  		</div>
+  		<div class='row'>
+  			<div class='col-sm-6'>
+  				<div class="form-group">
+  					<label for="maxTempInput">Begin Shading</label>
+  					<input id="beginShadeInput" class="set-time form-control " type="text"/>
+  			    <div class="date-wrapper">
+  						<div class="datetimepicker" data-id="#beginShadeInput"></div>
+  						<button type="button" class="btn btn-default btn-block closeDate"><span class="glyphicon glyphicon-chevron-up"></span></button>
+  					</div>
+  				</div>
+  			</div>
+        <div class='col-sm-6'>
+  				<div class="form-group">
+  					<label for="maxTempInput">End Shading</label>
+  					<input id="endShadeInput" class="set-time form-control" type="text"/>
+  					<div class="date-wrapper">
+  						<div class="datetimepicker" data-id="#endShadeInput"></div>
+  						<button type="button" class="btn btn-default btn-block closeDate"><span class="glyphicon glyphicon-chevron-up"></span></button>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+      <div class="row">
+  			<div class="col-md-12">
+  				<button id="saveSettings" type="button" class="btn olive disabled pull-right">Save</button>
+  			</div>
+  		</div>
+  	</form>
+  </div>
+</template>

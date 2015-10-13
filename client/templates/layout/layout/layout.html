@@ -1,0 +1,10 @@
+<template name="layout">
+  <header class='site-header'>
+    {{ > fixedNav }}
+  </header>
+  {{ > blazeContent }}
+  <div class="container">
+    {{ > yield }}
+  </div>
+  {{>footer}}
+</template>

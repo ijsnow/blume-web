@@ -1,0 +1,18 @@
+<template name="user">
+	<div class='content'>
+	  <li>
+	  	<ul>
+	  		<li>Email: {{ email }}</li>
+	  		{{ #if userRoles }}
+          <li>Roles:
+            <ul>
+              {{ #each userRoles }}
+                <li>{{ role }}</li>
+              {{ /each }}
+            </ul>
+          </li>
+        {{/if}}
+	  	</ul>
+	  </li>
+	</div>
+</template>

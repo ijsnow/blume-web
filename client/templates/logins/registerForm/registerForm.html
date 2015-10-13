@@ -1,0 +1,49 @@
+<template name="registerForm">
+  <!-- #BEGIN - Register Content -->
+    <div class="container" id="regiserContent">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>Register</h1>
+          <form id="registerAccountForm" data-ex-title='register'>
+             <div class='row'>
+               <div class='col-sm-12'>
+                 <div id='loginError' class="alert alert-danger" role="alert" style='display: none;'></div>
+               </div>
+             </div>
+             <div class='row'>
+               <div class='col-sm-12'>
+                 <div class="form-group">
+                   <label for="createNewEmailInput">Email</label>
+                   <input type="email" class="form-control accounts-input" id="createNewEmailInput" placeholder="Enter email">
+                 </div>
+               </div>
+             </div>
+             <div class='row'>
+               <div class='col-sm-12'>
+                 <div class="form-group">
+                   <label for="createNewPasswordInput">Password</label>
+                   <input type="password" class="form-control accounts-input" id="createNewPasswordInput" placeholder="Enter password">
+                 </div>
+               </div>
+             </div>
+             <div class='row'>
+               <div class='col-sm-12'>
+                 <div class="form-group">
+                   <label for="confirmPasswordInput" class='confirm-label'>Confirm Password</label>
+                   <input type="password" class="form-control accounts-input" id="confirmPasswordInput" placeholder="Enter password">
+                 </div>
+                 <a class='js-show-signin' href=''>Sign In</a>
+               </div>
+             </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-primary olive js-submit-new-account pull-right">Submit</button>
+                <button type="button" class="btn btn-default pull-right js-cancel" href="#accountsContent">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <!-- #END - Register Content -->
+</template>

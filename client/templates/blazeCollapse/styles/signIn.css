@@ -1,0 +1,61 @@
+.ex-sign-in {
+    height: auto;
+
+    -webkit-animation-name: sign-in; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: sign-in;
+    animation-duration: 1s;
+}
+
+.ex-c-sign-in {
+    height: 0px;
+
+    -webkit-animation-name: c-sign-in; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
+    animation-name: c-sign-in;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes sign-in {
+    from {
+        height: 0px;
+        padding: 0px;
+    }
+    to {
+        height: 317px;
+        padding: 15px 0px 30px opx;
+    }
+}
+
+@keyframes sign-in {
+    from {
+        height: 0px;
+        padding: 0px;
+    }
+    to {
+        height: 317px;
+        padding: 15px 0px 30px opx;
+    }
+}
+
+@-webkit-keyframes c-sign-in {
+    from {
+        height: 317px;
+        padding: 15px 0px 30px opx;
+    }
+    to {
+        height: 0px;
+        padding: 0px;
+    }
+}
+
+@keyframes c-sign-in {
+    from {
+        height: 317px;
+        padding: 15px 0px 30px opx;
+    }
+    to {
+        height: 0px;
+        padding: 0px;
+    }
+}

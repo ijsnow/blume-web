@@ -1,0 +1,35 @@
+<template name='unitTab'>
+  <div role="tabpanel" class="tab-pane fade" id='{{ unitId }}'>
+    <div class='unit-tab'>
+      <div class='row unit-tab-content'>
+        <div class='col-md-12'>
+          <h2>
+            Current Status:
+          </h2>
+          <h3>
+            {{ name }} <a class='btn-lg settingsToggle' href='#Settings?unit={{ unitId }}'><span class='glyphicon glyphicon-cog'></span></a>
+          </h3>
+          {{ > unitSettings }}
+          {{ #with lastPacket }}
+            <h4>
+              Temperature: {{ temperature }}
+            </h4>
+            <h4>
+              Water Level: {{ waterLevel }}
+            </h4>
+            <h4>
+              Light: {{ light }}
+            </h4>
+            <h4>
+              Vent is {{ ventIsOpen }}
+            </h4>
+            <!-- <h4>
+              Last Updated: {{ dateFormatted }}
+            </h4> -->
+          {{ /with }}
+        </div>
+      </div>
+      {{ > graph }}
+    </div>
+  </div>
+</template>

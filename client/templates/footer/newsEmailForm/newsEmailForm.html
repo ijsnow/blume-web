@@ -1,0 +1,28 @@
+<template name="newsEmailForm">
+  <h3>Want to keep updated?</h3><br/>
+  <form class="js-newsEmailForm">
+    <div class='row'>
+      <div class='col-sm-12'>
+        <div id='newsEmailSuccess' class="alert alert-success" role="alert" style='display: none;'>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Thanks!</strong> You will now recieve our email news letters.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="emailFormInput">Sign up for email news letters!</label>
+          <input type="email" class="form-control" id="emailFormInput" placeholder="Joe.Smith@example.com">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <button type='submit' class="btn beige pull-right">Submit</button>
+     </div>
+   </div>
+  </form>
+</template>

@@ -1,0 +1,130 @@
+p.home {
+  max-width: 650px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.main {
+  padding: 30px;
+}
+
+header .img {
+  left: 0px;
+  right: 0px;
+}
+
+#logo {
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%,-50%);
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  /* An attempt at smoothing the logos jumpiness on mobile.
+  **************************/
+  /*-webkit-transition: top 0.1s;*/
+  /*transition: top 0.1s;*/
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mountainsAndSky {
+  position: absolute;
+  height: 88vh;
+  z-index: 0;
+  background-image: url("/images/MountainsAndSky2000x950.png");
+}
+
+.mountains {
+  position: absolute;
+  height: 88vh;
+  z-index: 2;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform-style: flat;
+  /*width: 100%;*/
+  background-image: url("/images/Mountains2000x950.png");
+}
+
+.home-header {
+  height: 88vh;
+}
+
+#nav-replacer {
+  width: 100%;
+  height: 28px;
+}
+
+.more-info {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  -webkit-transition: max-height 0.5s ease-out;
+  -moz-transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+
+.devices {
+  padding: 0px 20px;
+}
+
+.more-info-toggle, p a {
+  color: #758155;
+}
+
+.more-info-toggle:hover,
+.more-info-toggle:focus,
+.more-info-toggle:active,
+.more-info-toggle:hover,
+.more-info-toggle:focus,
+.more-info-toggle:active,
+p a:hover,
+p a:focus,
+p a:active,
+p a:hover,
+p a:focus,
+p a:active {
+	color: #424E22;
+}
+
+.glyphicon-plus {
+  transition: all 0.75s;
+}
+
+.more-info-rotate {
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.more-info-in {
+  max-height: 500px;
+  transition: max-height 1s ease-in;
+}
+
+.last-content {
+  font-weight: 100;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (min-width: 992px) {
+  #WhatsInside .home-info-list {
+    padding-top: 60px;
+  }
+  #Scale .home-info-list {
+    padding-top: 50px;
+  }
+}
+
+.home-info-list li {
+  list-style: none;
+}
+
+.home-info-list {
+  padding-left: 20px;
+}
