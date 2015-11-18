@@ -28,7 +28,7 @@ Meteor.publish('todos', function () {
 });
 
 Meteor.publish("demoUnits", function(){
-  
+
   var units = Units.find({
       unitId: 0
   }, { sort: { createdAt: 1 } });
@@ -41,5 +41,5 @@ Meteor.publish("demoUnits", function(){
 });
 
 Meteor.publish('newsLetterEmails', function() {
-  return NewsLetterEmails.find();
+  return EmailsColl.find();
 });
