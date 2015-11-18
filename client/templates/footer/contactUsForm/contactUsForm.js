@@ -1,5 +1,6 @@
 Template.contactUsForm.events({
   "submit .js-contactUsForm": function(event, template){
+    debugger;
     var email = $('#contactEmailInput').val();
     var name = $('#contactNameInput').val();
     var content = $('#contactContentInput').val();
@@ -9,20 +10,22 @@ Template.contactUsForm.events({
     } else {
       $('#contactUsError').hide();
 
-      Meteor.call("submitContactUs", {
-        email: email.trim(),
-        name: name ? name.trim() : null,
-        content: content.trim()
-      });
+      $('#contactUsError').text('This feature is currently under construction. Please personally email either isaacjsnow@gmail.com or Samuel.Louis.Milligan@gmail.com. Sorry for any inconveniences!').show();
 
-      if ($('.iWantEmailsCb').is(':checked')) {
-        Meteor.call("addNewsLetterEmail", email.trim());
-      }
+      // Meteor.call("submitContactUs", {
+      //   email: email.trim(),
+      //   name: name ? name.trim() : null,
+      //   content: content.trim()
+      // });
+
+      // if ($('.iWantEmailsCb').is(':checked')) {
+      //   Meteor.call("addNewsLetterEmail", email.trim());
+      // }
 
       $('#contactNameInput').val("");
       $('#contactEmailInput').val("");
       $('#contactContentInput').val("");
-      $('#contactUsSuccess').show();
+      //$('#contactUsSuccess').show();
     }
 
     return false
