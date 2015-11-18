@@ -10,7 +10,7 @@ Template.contactUsForm.events({
     } else {
       $('#contactUsError').hide();
 
-      $('#contactUsError').text('This feature is currently under construction. Please personally email either isaacjsnow@gmail.com or Samuel.Louis.Milligan@gmail.com. Sorry for any inconveniences!').show();
+      $('#contactUsError').text('This feature is currently under construction. Please personally email us at contact@blumemicrofarms.com. Sorry for any inconveniences!').show();
 
       // Meteor.call("submitContactUs", {
       //   email: email.trim(),
