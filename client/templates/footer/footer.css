@@ -5,6 +5,24 @@
   width: 100%;
 }
 
+.social-media-logo {
+  height: 50px;
+  width: 50px;
+  fill: #E5D9D2;
+}
+
+.social-media-logo:hover {
+  fill: #d0bbae;
+}
+
+.email-link, .social-media-link {
+  color: inherit;
+}
+
+.email-link:hover, .email-link:focus {
+  color: #d0bbae;
+}
+
 @media (max-width: 990px) {
   .footer-section {
     margin-bottom: 20px;
