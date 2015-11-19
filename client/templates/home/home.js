@@ -82,16 +82,7 @@ Template.home.onRendered(function () {
     $('#logo').css({
       top: startTop + (scrollTop * 0.4) + 'px'
     });
-
   } );
-
-  if ($(window).width() < 400 || $(window).height() < 400) {
-    $(window).on('resize', function () {
-      var dims = getLogoDims();
-      $('#logo').width(dims);
-      $('#logo').height(dims);
-    } );
-  }
 } );
 
 Template.home.onDestroyed(function() {

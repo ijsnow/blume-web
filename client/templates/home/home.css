@@ -38,7 +38,7 @@ header .img {
   position: absolute;
   height: 88vh;
   z-index: 0;
-  background-image: url("/images/MountainsAndSky2000x950.png");
+  background-image: url("/images/panorama.png");
 }
 
 .mountains {
@@ -47,8 +47,7 @@ header .img {
   z-index: 2;
   -webkit-transform: translate3d(0,0,0);
   -webkit-transform-style: flat;
-  /*width: 100%;*/
-  background-image: url("/images/Mountains2000x950.png");
+  background-image: url("/images/panoramaGround.png");
 }
 
 .home-header {
