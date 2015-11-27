@@ -34,20 +34,20 @@ header .img {
   background-size: cover;
 }
 
-#mountainsAndSky {
+#panorama-sky {
   position: absolute;
   height: 88vh;
   z-index: 0;
-  background-image: url("/images/panorama.png");
+  background-image: url("/images/panoramaSky.png");
 }
 
-.mountains {
+.panorama-base {
   position: absolute;
   height: 88vh;
   z-index: 2;
   -webkit-transform: translate3d(0,0,0);
   -webkit-transform-style: flat;
-  background-image: url("/images/panoramaGround.png");
+  background-image: url("/images/panoramaBase.png");
 }
 
 .home-header {
@@ -126,4 +126,10 @@ p a:active {
 
 .home-info-list {
   padding-left: 20px;
+}
+
+@media (max-width: 700px) {
+  .home-info-list p, .home-p {
+    padding: 5%;
+  }
 }
