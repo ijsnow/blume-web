@@ -7,105 +7,76 @@
 
   {{ > homeNav }}
 	<div id='main' class="container">
-		<div class='content' id='WhatIsBlume'><!-- first-content'>-->
-			<div class='row'>
-				{{ #with whatIsBlume }}
-					<div class='col-xl-4 pull-right'>
-						<img src='/images/sketchyView.png' alt=''>
-					</div>
-					<div class='col-xl-8'>
-						<h1 class='center title'>{{ title }}</h1>
-						{{ > whatIsBlumeBullets }}
-						<h1 class='center title'>Our Mission</h1>
-            <p class='home-p'>{{ content }}</p>
-					</div>
-				{{ /with }}
-			</div>
-		</div>
+		<section id="WhatIsBlume">
+			{{#with whatIsBlume}}
+				<div id="regular-model" class="model-image"></div>
+				<h2>{{ title }}</h2>
+				{{ > whatIsBlumeBullets }}
+				<h2>Our mission</h2>
+				<p>{{ content }}</p>
+			{{/with}}
+			<div class="spacer" style="clear: both;"></div>
+			<hr>
+		</section>
 
-
-		<div class='content' id='BlumeForYou'>
-			<div class='row'>
-				{{ #with blumeForYou }}
-					<h1 class='center title'>{{ title }}</h1>
-				{{ /with }}
-				<div class='col-lg-4 pull-right'>
-					<img src='/images/Sketchyopen.png' alt=''>
+		<section id="BlumeForYou">
+			<div id="open-model" class="model-image"></div>
+			{{#with blumeForYou}}
+				<h2>{{ title }}</h2>
+			{{/with}}
+			{{#with gardener}}
+				<h2>{{ title }}</h2>
+				{{> gardenerBullets}}
+				<div class="more-info ex-gardener">
+					<p>{{ content }}</p>
 				</div>
-				<div class='col-lg-8'>
-					<div class="row">
-						<div class='col-md-12'>
-							{{ #with gardener }}
-								<h1 class='center title'>{{ title }}</h1>
-								{{ > gardenerBullets }}
-                <div class="more-info ex-gardener">
-                  <p class='home'>{{ content }}</p>
-                </div>
-							{{ /with }}
-						</div>
-						<div class='col-md-12'>
-							{{#with newbie }}
-								<h1 class='center title'>{{ title }}</h1>
-								{{ > newbieBullets }}
-                <div class="more-info ex-newbie">
-                  <p class='home'>{{ content }}</p>
-                </div>
-							{{/with}}
-						</div>
-					</div>
+			{{ /with }}
+			{{#with newbie}}
+				<h2>{{ title }}</h2>
+				{{ > newbieBullets }}
+				<div class="more-info ex-newbie">
+					<p>{{ content }}</p>
 				</div>
-			</div>
-		</div>
+			{{/with}}
+			<div class="spacer" style="clear: both;"></div>
+			<hr>
+		</section>
 
-		<div class='content' id='Scale'>
-			<div class='row'>
-				{{ #with scale }}
-					<div class='col-lg-4 pull-right'>
-						<img src='/images/manyOpen.png' alt=''>
-					</div>
-					<div class='col-lg-8'>
-						<h1 class='center title'>{{ title }}</h1>
-            {{ > scaleBullets }}
-					  <div class="more-info ex-scale">
-              <p class='home'>{{ content }}</p>
-            </div>
-					</div>
-				{{ /with }}
-			</div>
-		</div>
-
-		<div class='content' id='WhatsInside'>
-			<div class='row'>
-				{{ #with whatsInside }}
-					<div class='col-lg-4 pull-right'>
-						<img src='/images/section.png' alt=''>
-					</div>
-					<div class='col-lg-8'>
-						<h1 class='center title'>{{ title }}</h1>
-            {{ > whatsInsideBullets }}
-            <div class="more-info ex-whatsInside">
-					    <p class='home'>{{ content }}</p>
-            </div>
-					</div>
-				{{ /with }}
-			</div>
-		</div>
-
-		<div class='last-content' id='Control'>
-			<div class='row'>
-				{{ #with controlIt }}
-					<h1 class='center title'>{{ title }}</h1>
-					{{ > controlItBullets }}
-          <div class="more-info ex-controlIt">
-            <p class='home-p'>{{ content }}</p>
-          </div>
-				{{ /with }}
-				<div class='col-12'>
-					<div class="devices">
-          	{{ > devicesSvg }}
-					</div>
+		<section id="Scale">
+			{{#with scale}}
+				<div id="row-of-models" class="model-image"></div>
+				<h2>{{ title }}</h2>
+				{{ > scaleBullets }}
+				<div class="more-info ex-scale">
+					<p>{{ content }}</p>
 				</div>
-			</div>
-		</div>
+			{{/with}}
+			<div class="spacer" style="clear: both;"></div>
+			<hr>
+		</section>
+
+		<section id="WhatsInside">
+			{{#with whatsInside}}
+				<div id='section-model' class="model-image"></div>
+				<h2>{{ title }}</h2>
+				{{ > whatsInsideBullets }}
+				<div class="more-info ex-whatsInside">
+					<p class='home'>{{ content }}</p>
+				</div>
+			{{/with}}
+			<div class="spacer" style="clear: both;"></div>
+			<hr>
+		</section>
+
+		<section id="Control" class="last">
+			{{#with controlIt}}
+				<h2>{{ title }}</h2>
+				{{ > controlItBullets }}
+				<div class="devices">
+					{{ > devicesSvg }}
+				</div>
+			{{ /with }}
+			<div class="spacer" style="clear: both;"></div>
+		</section>
 	</div>
 </template>

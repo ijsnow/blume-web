@@ -50,8 +50,100 @@ header .img {
   background-image: url("/images/panoramaBase.png");
 }
 
+#regular-model {
+  width: 400px;
+  height: 500px;
+  float: right;
+  background-image: url("/images/sketchyView.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center -50px;
+}
+
+#open-model {
+  width: 400px;
+  height: 400px;
+  float: right;
+  background-image: url("/images/Sketchyopen.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -50px;
+}
+
+#row-of-models {
+  width: 350px;
+  height: 300px;
+  float: right;
+  background-image: url("/images/manyOpen.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#section-model {
+  width: 400px;
+  height: 500px;
+  float: right;
+  background-image: url("/images/section.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -50px;
+}
+
+@media (max-width: 990px) {
+  #regular-model, #open-model, #row-of-models, #section-model {
+    width: 100%;
+  }
+
+  #open-model {
+    height: 400px;
+    margin-bottom: 0px;
+  }
+
+  #row-of-models {
+    background-position-y: 0px;
+    height: 300px;
+  }
+
+  #section-model {
+    height: 350px;
+    background-position-y: -30px;
+  }
+}
+
+@media (max-width: 500px) {
+  #regular-model {
+    height: 275px;
+  }
+}
+
+@media (min-width: 990px) {
+  #WhatsInside > h2 {
+    padding-top: 140px;
+  }
+
+  #Scale > h2 {
+    padding-top: 30px;
+  }
+}
+
+hr {
+  border-color: #555;
+}
+
 .home-header {
   height: 88vh;
+}
+
+section {
+  margin-bottom: 80px;
+  color: #555;
+}
+
+section.last {
+  margin-bottom: 0px;
 }
 
 #nav-replacer {
@@ -111,15 +203,6 @@ p a:active {
   color: #555;
 }
 
-@media (min-width: 992px) {
-  #WhatsInside .home-info-list {
-    padding-top: 60px;
-  }
-  #Scale .home-info-list {
-    padding-top: 50px;
-  }
-}
-
 .home-info-list li {
   list-style: none;
 }
@@ -132,4 +215,8 @@ p a:active {
   .home-info-list p, .home-p {
     padding: 5%;
   }
+}
+
+.slim-image {
+  max-width: 400px;
 }

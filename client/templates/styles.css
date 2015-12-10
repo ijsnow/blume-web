@@ -50,6 +50,10 @@ img {
   padding-bottom: 50px;
 }
 
+/*.content.alternate {
+  background-color: #dac8be;
+}*/
+
 .first-content {
 	padding-top: 50px;
 	border-top: solid 1px #777;
@@ -77,6 +81,7 @@ img {
   background-color: #52612B;
   color: #E5D9D2;
 }
+
 .btn.olive.disabled {
   background-color: #758155;
   color: #E5D9D2;
